@@ -26,8 +26,7 @@ for i in range(0, years):
     invest_amount = (invest_amount) * (1+interest)
 
 loancost=loanamount-principal
-investac=invest_amount-principal
-totalprofit=investac-loancost
-print('Investment account profits after period:',round(investac,2))
+totalprofit=(invest_amount-loancost)-principal
+print('Investment account profits after period:',round(invest_amount,2))
 print('Loan cost over period:',round(loancost,2))
 print('Net profit overtime:',round(totalprofit,2))
